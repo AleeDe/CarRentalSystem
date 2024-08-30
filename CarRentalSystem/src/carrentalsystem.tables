@@ -1,0 +1,34 @@
+CREATE TABLE carrental(
+    VehicleNumber INT AUTO_INCREMENT PRIMARY KEY,
+    Model VARCHAR(255),
+    Brand VARCHAR(255),
+    YearOfManufacture YEAR,
+    Color VARCHAR(255),
+    FuelType VARCHAR(255),
+    RentPerDay DECIMAL(10, 2),
+    AvailabilityStatus BOOLEAN,
+    Mileage INT,
+    Features TEXT
+);
+
+CREATE TABLE userreg(
+    registrationNumber INT AUTO_INCREMENT PRIMARY KEY,
+    FullName VARCHAR(255),
+    gender CHAR(1),
+    dateOfBirth DATE,
+    cnic# BIGINT,
+    phoneNumber BIGINT,
+    Licensenumber BIGINT,
+    password VARCHAR(255),
+    username VARCHAR(255)
+);
+
+CREATE TABLE Bookings (
+    bookingId INT AUTO_INCREMENT PRIMARY KEY,
+    customerName VARCHAR(255),
+    driverName VARCHAR(255),
+    bookingDate DATETIME,
+    returnDate DATETIME,
+    AmountPaid DECIMAL(10, 2),
+    Fare DECIMAL(10, 2)
+);

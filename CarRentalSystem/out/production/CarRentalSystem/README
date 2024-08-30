@@ -1,0 +1,65 @@
+Car Rental System
+Overview
+The Car Rental System is a Java-based application designed to manage car rentals efficiently. It connects to a database and handles various aspects of the rental process, including booking, car management, and user registration.
+
+Database Schema
+Before using the system, create a database named carrentalsystem with the following tables:
+
+bookings: Stores booking details.
+VehicleNumber
+Model
+Brand
+BookingDate
+ReturnDate
+FarePerDay
+RentalDays
+carrental: Stores car details.
+VehicleNumber
+Model
+Brand
+YearOfManufacture
+Color
+FuelType
+RentalPrice
+Mileage
+Features
+userreg: Stores user registration details.
+FullName
+Username
+Password
+DateOfBirth
+PhoneNumber
+CICNumber
+LicenseNumber
+Gender
+Packages and Classes
+The system is organized into three main packages:
+
+BookingProcess
+Classes:
+BookingProcess: Manages the booking process.
+CheckingBooking: Admin-only class for checking bookings.
+ReturnCar: Handles car returns by users.
+UserInterface
+Provides the user interface for the system, allowing users to rent and return cars, and log in or sign up. Admins can also perform checks after logging in.
+VehicleSelection
+Manages car registration, display, and deletion.
+Main Class
+The main class is LoginPanel, which initializes the system and calls other functions hierarchically.
+
+Getting Started
+Clone the repository from GitHub.
+Create the carrentalsystem database with the specified tables.
+Import the project into your preferred IDE.
+Run the LoginPanel class to start the application.
+Features
+User Registration: Users can sign up and log in.
+Car Booking: Users can book cars by providing necessary details.
+Car Management: Admins can add, view, and delete car details.
+Booking Management: Admins can check and manage bookings.
+Car Return: Users can return cars and update the system.
+Contributing
+Feel free to fork the repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
+
+License
+This project is licensed under the MIT License.
